@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+
+import os
+
+
+
+def getfilelist(path):
+    for dir,folder,file in os.walk(path):
+        for i in file:
+            filename=os.path.splitext(i)[0]
+            os.mkdir(filename)
+            os.system("copy "+i+' '+filename+"\\")
+            os.system("rename "+filename+"\\"+i+' index.html')
+
+
+
+getfilelist("E:\\Git\\1")
