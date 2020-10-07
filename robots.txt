@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /wp-admin/
-Disallow: /other/go/
-Allow: /wp-admin/admin-ajax.php
-Sitemap: https://www.wunote.cn/sitemap.xml
